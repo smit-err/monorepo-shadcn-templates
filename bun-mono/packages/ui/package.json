@@ -1,0 +1,24 @@
+{
+  "name": "@repo/ui",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "tailwindcss": "^4.0.14"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.0.2",
+    "tw-animate-css": "^1.2.4"
+  },
+  "exports":{
+    "./globals.css":"./src/styles/globals.css",
+    "./hooks/*":"./src/hooks/*.ts",
+    "./lib/*":"./src/lib/*.ts",
+    "./components/*":"./src/components/*.tsx"
+  }
+}
